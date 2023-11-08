@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Kitchen {
     private String floor;
     private String ceil;
+
     public Kitchen() {
         floor = "Не указан";
         ceil = "Не указан";
@@ -30,3 +31,4 @@ public class Kitchen {
         System.out.print("Введите материал потолка: ");
         ceil = scanner.nextLine();
     }
+}
