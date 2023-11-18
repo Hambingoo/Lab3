@@ -3,6 +3,7 @@ package raw;
 import java.util.Scanner;
 
 public class Apartment {
+    private static  int apartmentCounter=0;
     private String status;
     private float square;
     private String street;
@@ -12,6 +13,10 @@ public class Apartment {
     private Bathroom bathroom;
     private SleepingRooms sleepingRooms;
 
+    public static int printApartmentCounter()
+    {
+        return apartmentCounter;
+    }
     public Apartment() {
         kitchen = new Kitchen();
         hall = new Hall();
@@ -23,6 +28,7 @@ public class Apartment {
         numOfRooms = 0;
         floor = 0;
         housenum = 0;
+        apartmentCounter++;
     }
 
     public Apartment(Kitchen kitchen, Hall hall, Bathroom bathroom, SleepingRooms sleepingRooms,
@@ -37,6 +43,7 @@ public class Apartment {
         this.numOfRooms = numOfRooms;
         this.floor = floor;
         this.housenum = housenum;
+        apartmentCounter++;
     }
 
     public void create() {
