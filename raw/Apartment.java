@@ -17,6 +17,12 @@ public class Apartment {
     {
         return apartmentCounter;
     }
+
+    public float getSquare()
+    {
+        return square;
+    }
+
     public Apartment() {
         kitchen = new Kitchen();
         hall = new Hall();
@@ -101,7 +107,7 @@ public class Apartment {
     }
 
     public void printInfo() {
-        System.out.println("\tИнформация о квартире");
+        System.out.println("\tИнформация о квартире".toUpperCase());
         System.out.println("Статус: " + status);
         System.out.println("Улица " + street + ", дом " + housenum + ", этаж " + floor);
         System.out.println("Площадь: " + square);
